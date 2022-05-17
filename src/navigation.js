@@ -1,4 +1,5 @@
 import {createBrowserHistory} from 'history'
+import {parseQuery, stringifyQuery} from './query'
 
 export const history = createBrowserHistory()
 
