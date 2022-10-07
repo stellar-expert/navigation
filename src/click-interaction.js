@@ -1,4 +1,5 @@
-import {history, navigation} from './navigation'
+import {navigation} from './navigation'
+import {history} from './history'
 
 export function bindClickNavHandler(container) {
     container.addEventListener('click', e => {

@@ -1,10 +1,8 @@
-import {createBrowserHistory} from 'history'
+import {history} from './history'
 import {parseQuery, stringifyQuery} from './query'
 
-export const history = createBrowserHistory()
-
-let queryString = parseQuery(),
-    observers = []
+const observers = []
+let queryString = parseQuery()
 
 function notifyChanged(nav) {
     for (let handler of observers) {

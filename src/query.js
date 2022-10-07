@@ -1,4 +1,4 @@
-import {history} from './navigation'
+import {history} from './history'
 
 export function stringifyQuery(query) {
     if (!query) return ''
